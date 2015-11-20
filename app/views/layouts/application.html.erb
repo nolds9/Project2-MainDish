@@ -3,8 +3,10 @@
 <head>
   <title>Maindish2</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "welcome" if controller_name == "welcome" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Old+Standard+TT:400italic,700|Cinzel:700|Playfair+Display+SC:400,900' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -13,6 +15,7 @@
       <div class="navbar-brand"><%= link_to "MAIN DISH", root_path %></div>
       <% if user_signed_in? %>
         <ul class="nav navbar-nav navbar-right">
+          <li><%= link_to "Recipes", recipes_path %>
           <li><%= link_to "New Recipe", new_recipe_path %></li>
           <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
         </ul>
