@@ -22,7 +22,7 @@ Really like how you went out a built an app to solve a problem that's personal a
 
 **Meets Expectations**
 
-Please review [inline code comments](https://github.com/dennizzy/project2/compare/master...nolds9:feedback)
+Please review [inline code comments](https://github.com/qadriyyah119/Project2-MainDish/compare/master...nolds9:feedback)
 prefixed with my initials: `NHO` for detailed feedback.
 
 ## Deployment and Functionality
