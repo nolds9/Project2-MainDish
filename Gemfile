@@ -20,7 +20,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-gem 'simple_form', '~> 3.2'
+gem 'simple_form', '~> 3.2'              # NHO: It's great that you're using all these gems, just make sure you mention them in your readme and in install/setup.
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 gem 'cocoon', '~> 1.2', '>= 1.2.6'
 gem 'devise'
@@ -40,6 +40,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  gem 'pry'
 end
 
 group :development do
@@ -49,3 +51,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+
+# NHO: What gems would you need to add for production?

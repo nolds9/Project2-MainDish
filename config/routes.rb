@@ -1,13 +1,15 @@
 Rails.application.routes.draw do
 
+#NHO: Could these resources be nested?
   devise_for :users
   resources :recipes
-  resources :welcome
+
+
+  resources :welcome # NHO: I don't think you need :welcome as a resource, you have the index defined down below.
 
   root 'welcome#index'
-  get 'welcome/index'
-  get 'recipes/index'
-
+  get 'welcome/index' # !
+  get 'recipes/index' # NHO: Is this route necessary?
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
